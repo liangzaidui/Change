@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import ncBackground from '../components/background.vue'
 import change from '../components/change.vue'
 import input from '../components/input.vue'
+import indexView from '../views/IndexView.vue'
 
 Vue.use(VueRouter)
 
@@ -11,7 +12,7 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'home',
-    component: change
+    component: indexView
   },
   {
     path: '/about',
