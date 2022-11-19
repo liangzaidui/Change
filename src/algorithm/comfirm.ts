@@ -7,22 +7,26 @@ export const judge = (tokens: string): string => {
 
     // 判断是否输入非法字符
     let tokenRe: string = "[^0-9零壹贰叁肆伍陆柒捌玖拾佰仟万亿元整]"
-    if (tokens.search(tokenRe)) {
+    if (tokens.search(tokenRe) != -1) {
+        // tokens.search(tokenRe)
         return "输入的字符不正确"
     }
 
     // 判断是否全为大写或全为小写且长度合法
-    let lowRe: string = "\d+"
+    let lowRe: string = "\\d"
     let upRe: string = "[零壹贰叁肆伍陆柒捌玖拾佰仟万亿元整]"
-    if (tokens.search(lowRe)) {
-        if (tokens.length > 12){
-            return "输入的小写数字长度大于12"
-        }
-        if (tokens[0] == "0") {
-            return "小写数字的首位为0"
-        }
+    let upFlag: boolean = false
+    let lowFlag: boolean = false
+    if (tokens.search(lowRe) != -1) {
+        lowFlag = true
     }
-    else if (tokens.search(upRe)) {
+    if (tokens.search(upRe) != -1) {
+        upFlag = true
+    }
+    if (upFlag == true && lowFlag == true) {
+        return "混合输入大写和小写数字"
+    }
+    else if (upFlag) {
         if (tokens.length > 25) {
             return "输入的大写数字长度大于25"
         }
@@ -32,8 +36,13 @@ export const judge = (tokens: string): string => {
             return validInfo
         }
     }
-    else {
-        return "混合输入大写和小写数字"
+    else if (lowFlag) {
+        if (tokens.length > 12){
+            return "输入的小写数字长度大于12"
+        }
+        if (tokens[0] == "0") {
+            return "小写数字的首位为0"
+        }
     }
     return "输入正确"
 }
@@ -51,7 +60,7 @@ const isValidUpNum = (upNum: string): string => {
     for (let i:number = 0; i < units.length - 1; i++) {
         for (let j:number = i+1; j < units.length; j++) {
             let invalidToken: string = units[i] + units[j]
-            if (upNum.search(invalidToken)) {
+            if (upNum.search(invalidToken) != -1) {
                 return invalidToken+"不合语法"
             } 
         }
