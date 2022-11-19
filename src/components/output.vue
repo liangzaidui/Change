@@ -1,29 +1,38 @@
-<template>
-  <div class="largest">
-    <div class="leftbox">输出</div>
-    <div class="rightbox"></div>
-  </div>
+
+  <template>
+    <div class="largest">
+      <div class="left">{{msg}}</div>
+      <div class="right"></div>
+    </div>
 </template>
+
 
 <script lang="ts">
 
 export default {
-  name: "output",
-  props: {
-    ncIntPut: String,
+  name: 'outputing',
+  data() {
+    return{
+      ncIntPut: String,
     ncOutPut: String
+    }
+    
   },
+  props:{
+        msg:String
+  }
+  
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.largest{
-width:840px;
-height:140px;
-}
-.leftbox{
-float:left;
+ .largest{
+  width:860px;
+  overflow: hidden;
+ }
+ .left{
+  float:left;
 width: 281px;
 height: 140px;
 line-height: 52px;
@@ -34,9 +43,9 @@ font-size: 36px;
 text-align: center;
 font-family: Roboto;
 border: 5px solid rgba(16, 16, 16, 1);
-}
-.rightbox{
-float:right;
+ }
+ .right{
+ float:right;
 width: 539px;
 height: 140px;
 border-radius: 15px 15px 15px 15px;
@@ -44,7 +53,7 @@ color: rgba(16, 16, 16, 1);
 font-size: 48px;
 text-align: left;
 font-family: Roboto;
-background-color: rgba(255, 255, 255, 1);
 border: 5px solid rgba(16, 16, 16, 1);
-}
+ }
 </style>
+

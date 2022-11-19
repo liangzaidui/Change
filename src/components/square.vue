@@ -3,13 +3,13 @@
     <div class="title">
       <div class="title_text">数字大小写转换器</div>
 
-        <inputing msg="输入"></inputing>
+       <div id="one"><inputing msg="输入"></inputing></div> 
 
         <error></error>
 
         <!-- <output></output> -->
 
-        <inputing msg="输出"></inputing>
+        <div id="two"><outputing msg="输出"></outputing></div>
 
         
         <result></result>
@@ -21,7 +21,7 @@
 import result from './result.vue';
 import error from './error.vue';
 import inputing from './input.vue';
-import output from './output.vue';
+import outputing from './output.vue';
 
 export default {
   name: 'app',
@@ -29,7 +29,7 @@ export default {
   },
   components:{
     result,
-    output,
+    outputing,
     error,
     inputing
   }
@@ -80,5 +80,11 @@ export default {
   font-size: 48px;
   text-align: left;
   font-family: SourceHanSansSC-regular;
+}
+.one{
+  margin-top: 5px;
+}
+.two{
+  margin-left:5px;
 }
 </style>

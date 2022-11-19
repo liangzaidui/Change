@@ -3,7 +3,7 @@
     <div class="con"> 点击输出结果</div>
   </div>
 </template>
-<script>
+<script lang="ts">
   export default{
     name:'result'
   }
