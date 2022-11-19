@@ -1,4 +1,10 @@
 export const low2Up = (tokens: string): string => {
+    /**
+     * 小写数字转大写
+     * @param tokens: 输入的小写数字字符串
+     * @return output: 大写数字字符串
+     */
+
     // 字符转数字
     let num: number = Number.parseInt(tokens)
         
@@ -72,15 +78,20 @@ export const low2Up = (tokens: string): string => {
             flag=1
         }
     }
-    output+="整"
+    output +="整"
     return output
 }
 
-export const up2Low = (tokens: string) => {
+
+export const up2Low = (tokens: string): number => {
+    /**
+     * 大写数字转小写数字
+     * @param tokens: 大写数字字符串
+     * @return result: 小写数字
+     */
     let cnArr: string[] = ['壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖'];
     let chArr1: string[] = ['拾', '佰', '仟'];
     let chArr2: string[] = ['万', '亿'];
-    let allChineseNum: string = "零壹贰叁肆伍陆柒捌玖拾佰仟万亿";
 
 
     let result: number = 0;
