@@ -1,8 +1,14 @@
 <template>
-    <div>
+    <div class="back">
+    <div class="inside">
+      <div class="head">数字大小写转换器</div>
+      <div class="put">
         输入<input id="data" type="text" name="fname" v-model="inputInfo"><br>
-            <input type="submit" value="提交" @click="transform">
+        <input class="out" type="submit" value="点击输出结果"  @click="transform">
+      </div>
+      
     </div>
+  </div>
 </template>
 
 <script lang="ts">
