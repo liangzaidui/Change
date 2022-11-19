@@ -32,8 +32,10 @@ export default Vue.extend({
             let upRe: string = "[零壹贰叁肆伍陆柒捌玖拾佰仟万亿元整]+"
             if (this.inputInfo.search(lowRe) != -1) {
                 alert(low2Up(this.inputInfo))
+                this.inputInfo = ""
             } else {
                 alert(up2Low(this.inputInfo))
+                this.inputInfo = ""
             }
         }
         else{
