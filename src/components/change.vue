@@ -1,14 +1,8 @@
 <template>
   <div class="app">
     <div>
-      <background></background>
-      <square>
-        <inputing></inputing>
-        <error></error>
-        <output></output>
-        <result></result>
-      </square>
-
+      <background>
+      </background>
     </div>
   </div>
 </template>

@@ -19,7 +19,7 @@ export default {
 <style scoped lang="scss">
 .square {
   margin-left: 240px;
-  margin-top: 123px;
+  margin-top: 10px;
   width: 1024px;
   height: 769px;
   line-height: 20px;
@@ -52,6 +52,7 @@ export default {
   text-align: center;
   font-family: Roboto;
   border: 1px solid rgba(187, 187, 187, 1);
+  position: relative;
 }
 
 .title_text {

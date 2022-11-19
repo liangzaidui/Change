@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import ncBackground from '../components/ncBackground.vue'
+import ncBackground from '../components/background.vue'
 import change from '../components/change.vue'
 
 Vue.use(VueRouter)
@@ -25,11 +25,6 @@ const routes: Array<RouteConfig> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
-  {
-    path: '/ncBackground',
-    name: 'ncBackground',
-    component: ncBackground
-  }
 ]
 
 const router = new VueRouter({
