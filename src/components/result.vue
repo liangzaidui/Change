@@ -1,39 +1,37 @@
 <template>
-  <div class="app">
-    <div>
-    </div>
-    </ul>
+  <div class="Result">
+    <div class="con"> 点击输出结果</div>
   </div>
 </template>
 
-<script lang="ts">
-
-export default {
-  name: 'app',
-  props: {
-    ncIntPut: String,
-    ncOutPut: String
-  },
-};
+<script>
+  export default{
+    name:'result'
+  }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
+<style scoped>
+div{
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
+.Result{
+  height:89px;
+  width: 508px;
+  position: absolute;
   display: inline-block;
-  margin: 0 10px;
+  top:727px;
+  left: 498px;
+  background-color: black;
+  color: white;
+  font-size: 48px;
+  text-align: center;
 }
-
-a {
-  color: #42b983;
+.con{
+  position: relative;
+  top:10px;
 }
 </style>
