@@ -1,6 +1,6 @@
 <template>
     <div class="largest">
-      <div class="leftbox">输入</div>
+      <div class="leftbox">{{msg}}</div>
       <div class="rightbox"></div>
     </div>
 </template>
@@ -11,7 +11,8 @@ export default {
   name: 'input',
   props: {
     ncIntPut: String,
-    ncOutPut: String
+    ncOutPut: String,
+    msg:String
   },
 };
 </script>

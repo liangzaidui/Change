@@ -2,10 +2,17 @@
   <div class="square">
     <div class="title">
       <div class="title_text">数字大小写转换器</div>
-      <inputing></inputing>
-      <error></error>
-      <inputing></inputing>
-      <result></result>
+
+        <inputing msg="输入"></inputing>
+
+        <error></error>
+
+        <!-- <output></output> -->
+
+        <inputing msg="输出"></inputing>
+
+        
+        <result></result>
     </div>
   </div>
 </template>
@@ -20,13 +27,13 @@ export default {
   name: 'app',
   props: {
   },
-  components: {
+  components:{
     result,
     output,
     error,
-    inputing,
+    inputing
   }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

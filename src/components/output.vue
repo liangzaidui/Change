@@ -8,11 +8,11 @@
 <script lang="ts">
 
 export default {
-name: 'output',
-props: {
-  ncIntPut: String,
-  ncOutPut: String
-},
+  name: "output",
+  props: {
+    ncIntPut: String,
+    ncOutPut: String
+  },
 };
 </script>
 

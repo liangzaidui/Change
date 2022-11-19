@@ -1,8 +1,7 @@
 <template>
   <div class="box1">
     <!-- <img src="../assets/图片.png" alt=""> -->
-      <square>
-      </square>
+      <square></square>
   </div>
 </template>
 // import Vue from 'vue';
