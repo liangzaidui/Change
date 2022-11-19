@@ -22,8 +22,8 @@ div{
   width: 508px;
   position: absolute;
   display: inline-block;
-  top:727px;
-  left: 498px;
+  top:627px;
+  left: 200px;
   background-color: black;
   color: white;
   font-size: 48px;
