@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import ncBackground from '../components/background.vue'
 import change from '../components/change.vue'
 import input from '../components/input.vue'
-
 
 Vue.use(VueRouter)
 
@@ -26,11 +26,14 @@ const routes: Array<RouteConfig> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
+<<<<<<< HEAD
   {
     path:'/input',
     name:'input',
     component:input
   }
+=======
+>>>>>>> 19adce4c8826d40cacb54cafacd2c6c3ff10bf6e
 ]
 
 const router = new VueRouter({

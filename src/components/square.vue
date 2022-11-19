@@ -33,23 +33,17 @@ export default {
 <style scoped lang="scss">
 .square {
   margin-left: 240px;
-  margin-top: 123px;
+  margin-top: 10px;
   width: 1024px;
   height: 769px;
   line-height: 20px;
   border-radius: 24px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: white;
   font-size: 14px;
   text-align: center;
   font-family: Roboto;
   border: 5px solid rgba(187, 187, 187, 1);
-  background:
-    linear-gradient(to top, #7e807a, #7e807a, 10px, transparent 10px),
-    linear-gradient(to right, #bcc7bc, #b9caba 10px, transparent 10px),
-    linear-gradient(to bottom, black, black 10px, transparent 10px),
-    linear-gradient(to left, rgb(89, 84, 84), rgb(89, 84, 84)10px, transparent 10px);
-
-  box-shadow: 00010px grey;
+  box-shadow: 00010px white;
   outline: dashed 10px white;
 }
 
@@ -66,6 +60,7 @@ export default {
   text-align: center;
   font-family: Roboto;
   border: 1px solid rgba(187, 187, 187, 1);
+  position: relative;
 }
 
 .title_text {
