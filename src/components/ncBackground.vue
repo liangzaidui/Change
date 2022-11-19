@@ -2,7 +2,6 @@
   <div class="box1">
     <img src="public\图片.png" alt="">
     <div class="box2">
-      <div class="box3">kkkk</div>
     </div>
   </div>
 </template>
