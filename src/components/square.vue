@@ -2,10 +2,10 @@
   <div class="square">
     <div class="title">
       <div class="title_text">数字大小写转换器</div>
-        <inputing></inputing>
-        <error></error>
-        <output></output>
-        <result></result>
+      <inputing></inputing>
+      <error></error>
+      <inputing></inputing>
+      <result></result>
     </div>
   </div>
 </template>
@@ -20,7 +20,7 @@ export default {
   name: 'app',
   props: {
   },
-  components:{
+  components: {
     result,
     output,
     error,

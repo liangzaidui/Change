@@ -11,11 +11,6 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/change',
-    name: 'change',
     component: change
   },
   {
