@@ -67,7 +67,4 @@ public class xi {
         return result;
     }
 
-    public static void main(String[] args) {
-        System.out.println(li("伍万零壹佰贰拾"));
-    }
 }
