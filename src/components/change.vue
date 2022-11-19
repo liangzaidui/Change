@@ -3,7 +3,7 @@
     <div>
       <background></background>
       <square>
-        <input></input>
+        <inputing></inputing>
         <error></error>
         <output></output>
         <result></result>
@@ -17,7 +17,7 @@
 import background from './background.vue';
 import result from './result.vue';
 import error from './error.vue';
-import input from './input.vue';
+import inputing from './input.vue';
 import output from './output.vue';
 import square from './square.vue'
 export default {
@@ -26,7 +26,7 @@ export default {
     background,
     result,
     error,
-    input,
+    inputing,
     output,
     square
   }
