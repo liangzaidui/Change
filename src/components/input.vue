@@ -44,6 +44,7 @@ color: rgba(16, 16, 16, 1);
 font-size: 48px;
 text-align: left;
 font-family: Roboto;
+background-color: rgba(255, 255, 255, 1);
 border: 5px solid rgba(16, 16, 16, 1);
  }
 </style>

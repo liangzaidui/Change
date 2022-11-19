@@ -1,24 +1,20 @@
 <template>
   <div class="box1">
-    <img src="../assets/图片.png" alt="">
+    <!-- <img src="../assets/图片.png" alt=""> -->
       <square>
-        <inputing></inputing>
-        <error></error>
-        <output></output>
-        <result></result>
       </square>
   </div>
 </template>
 // import Vue from 'vue';
 
 <script lang="ts">
-import result from './result.vue';
-import error from './error.vue';
-import inputing from './input.vue';
-import output from './output.vue';
+
 import square from './square.vue'
 export default {
-  name: "ncBackground",
+  name: "background",
+  components:{
+    square
+  }
 };
 </script>
 

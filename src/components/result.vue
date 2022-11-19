@@ -3,7 +3,6 @@
     <div class="con"> 点击输出结果</div>
   </div>
 </template>
-
 <script>
   export default{
     name:'result'
@@ -32,6 +31,6 @@ div{
 }
 .con{
   position: relative;
-  top:10px;
+  top:35px;
 }
 </style>

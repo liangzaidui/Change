@@ -2,33 +2,17 @@
   <div class="app">
     <div>
       <background></background>
-      <square>
-        <inputing></inputing>
-        <error></error>
-        <output></output>
-        <result></result>
-      </square>
-
     </div>
   </div>
 </template>
 
-<script lang="ts">
+<script scoped lang="ts">
 import background from './background.vue';
-import result from './result.vue';
-import error from './error.vue';
-import inputing from './input.vue';
-import output from './output.vue';
-import square from './square.vue'
+
 export default {
   name: 'app',
   components: {
-    background,
-    result,
-    error,
-    inputing,
-    output,
-    square
+    background
   }
 };
 </script>

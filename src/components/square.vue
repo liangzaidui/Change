@@ -2,16 +2,30 @@
   <div class="square">
     <div class="title">
       <div class="title_text">数字大小写转换器</div>
+        <inputing></inputing>
+        <error></error>
+        <output></output>
+        <result></result>
     </div>
   </div>
 </template>
 
 <script lang="ts">
+import result from './result.vue';
+import error from './error.vue';
+import inputing from './input.vue';
+import output from './output.vue';
 
 export default {
   name: 'app',
   props: {
   },
+  components:{
+    result,
+    output,
+    error,
+    inputing,
+  }
 };
 </script>
 
