@@ -5,6 +5,10 @@ export const judge = (tokens: string): string => {
      * @return 提示语句，如果输入正确会返回输入正确，如果输入错误会返回错误的原因
      */
 
+    // 判断输入是否为空
+    if (tokens.length == 0) {
+        return "输入为空"
+    }
     // 判断是否输入非法字符
     let tokenRe: string = "[^0-9零壹贰叁肆伍陆柒捌玖拾佰仟万亿元整]"
     if (tokens.search(tokenRe) != -1) {
