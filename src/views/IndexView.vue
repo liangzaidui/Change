@@ -59,5 +59,58 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-    
+.back{
+  display: inline-block;
+  position: relative;
+  border-radius: 24px;
+  width: 1000px;
+  height: 500px;
+  background-color: #666666;
+  text-align: center;
+  border: 1px solid rgba(187, 187, 187, 1);
+}
+.inside{
+  top:85px;
+  width: 800px;
+  height: 330px;
+  position: relative;
+  display: inline-block;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.head{
+  border-radius: 15px 15px 15px 15px;
+  background-color: rgba(16, 16, 16, 1);
+  color: white;font-size:48px ;
+  width: 500px;
+  height: 75px;
+  display: inline-block;
+  position: relative;
+  top:50px;
+}
+.put{
+  border-radius: 15px 15px 15px 15px;
+  background-color: rgba(16, 16, 16, 1);
+  color: white;font-size:48px ;
+  width: 500px;
+  height: 75px;
+  display: inline-block;
+  position: relative;
+  top:80px;
+}
+input{
+  width: 300px;
+  height: 50px;
+  position: relative;
+  top:-3px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.out{
+  background-color: black;
+  color: white;
+  border-radius: 15px 15px 15px 15px;
+  position: relative;
+  top:15px
+} 
 </style>
